@@ -61,7 +61,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"IYdzx7L4HhTq4ugmU38bcTeL-gzGzoHsz","app_key":"AyfUXKKGpuk6w4nD9mSTJ9gQ","server_url":"https://iydzx7l4.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -72,9 +72,30 @@
   <script  src="/js/color-schema.js" ></script>
   
 
+  
 
   
-<meta name="generator" content="Hexo 6.3.0"></head>
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
 
 
 <body>
@@ -223,18 +244,24 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/11/15/markdow%E9%80%9F%E6%9F%A5%E8%A1%A8/" target="_self">
+          <img src="/img/beach.jpg" srcset="/img/loading.gif" lazyload alt="Markdown速查表">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/11/13/hello-world/" target="_self">
-          你好！
+        <a href="/2022/11/15/markdow%E9%80%9F%E6%9F%A5%E8%A1%A8/" target="_self">
+          Markdown速查表
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/11/13/hello-world/" target="_self">
+      <a class="index-excerpt " href="/2022/11/15/markdow%E9%80%9F%E6%9F%A5%E8%A1%A8/" target="_self">
         <div>
-          欢迎来到Hexo! 这是你最开始的文章. 查看documentation获取更多信息. 当你使用Hexo遇到任何问题,你可以在troubleshooting找到答案或者在GitHub提问. 快速开始创建一个新的文章1$ hexo new &quot;新的文章&quot;  更多信息: Writing 启动服务1$ hexo server  More info: Server 生成静态文件1$ he
+          摘要：常用的Markdown的基本语法和扩展语法
         </div>
       </a>
 
@@ -242,8 +269,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-11-13 22:01" pubdate>
-              2022-11-13
+            <time datetime="2022-11-15 02:22" pubdate>
+              2022-11-15
             </time>
           </div>
         
@@ -258,7 +285,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%AC%A2%E8%BF%8E/" class="category-chain-item">欢迎</a>
+  <a href="/categories/Tips/" class="category-chain-item">Tips</a>
   
   
 
@@ -273,9 +300,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E6%AC%A2%E8%BF%8E/">#欢迎</a>
-            
-              <a href="/tags/%E6%96%B0%E6%89%8B/">#新手</a>
+              <a href="/tags/Markdown/">#Markdown</a>
             
           </div>
         
@@ -335,6 +360,31 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
   
   
 </div>
@@ -385,6 +435,8 @@
 
 
 
+
+  <script defer src="/js/leancloud.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
