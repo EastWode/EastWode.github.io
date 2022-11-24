@@ -19,7 +19,7 @@
     <meta name="description" content="本文展示了利用Python和kaggle数据集完成数据分析的主要流程和方法，更多信息请前往 数据可视化与Logit回归分析 获取。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据分析与可视化">
-<meta property="og:url" content="https://eastwode.gitee.io/2022/11/15/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/index.html">
+<meta property="og:url" content="https://eastwode.gitee.io/2022/11/24/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/index.html">
 <meta property="og:site_name" content="东木子的书屋">
 <meta property="og:description" content="本文展示了利用Python和kaggle数据集完成数据分析的主要流程和方法，更多信息请前往 数据可视化与Logit回归分析 获取。">
 <meta property="og:locale" content="zh_CN">
@@ -35,10 +35,10 @@
 <meta property="og:image" content="https://eastwode.gitee.io/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_24_0.png">
 <meta property="og:image" content="https://eastwode.gitee.io/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_67_0.png">
 <meta property="og:image" content="https://eastwode.gitee.io/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_69_0.png">
-<meta property="og:image" content="https://eastwode.gitee.io/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_77_1.png">
+<meta property="og:image" content="https://eastwode.gitee.io/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_77_0.png">
 <meta property="og:image" content="https://eastwode.gitee.io/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_78_0.png">
-<meta property="article:published_time" content="2022-11-15T12:19:26.000Z">
-<meta property="article:modified_time" content="2022-11-15T12:50:51.346Z">
+<meta property="article:published_time" content="2022-11-24T12:51:00.000Z">
+<meta property="article:modified_time" content="2022-11-24T13:07:04.636Z">
 <meta property="article:author" content="东木子">
 <meta property="article:tag" content="Logit回归">
 <meta property="article:tag" content="Python">
@@ -251,8 +251,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-15 20:19" pubdate>
-          2022年11月15日
+        <time datetime="2022-11-24 20:51" pubdate>
+          2022年11月24日
         </time>
       </span>
     
@@ -263,7 +263,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          26k 字
+          27k 字
         
       </span>
     
@@ -310,9 +310,9 @@
                 
                 <p>本文展示了利用Python和kaggle数据集完成数据分析的主要流程和方法，更多信息请前往 <a target="_blank" rel="noopener" href="https://www.kaggle.com/code/woodeast/logit/notebook">数据可视化与Logit回归分析</a> 获取。</p>
 <span id="more"></span>
-<h2 id="一-数据读取"><a class="markdownIt-Anchor" href="#一-数据读取"></a> 一、数据读取</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd   <span class="hljs-comment">##导入pandas库</span><br></code></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 从Excel中读取数据</span><br>dataset = pd.read_excel(<span class="hljs-string">&quot;Breast_Cancer.xlsx&quot;</span>)<br></code></pre></td></tr></table></figure>
+<h1 id="一-数据读取"><a class="markdownIt-Anchor" href="#一-数据读取"></a> 一、数据读取</h1>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd   <span class="hljs-comment">#导入pandas库</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 从Excel中读取数据</span><br>dataset = pd.read_excel(<span class="hljs-string">&quot;Breast_Cancer.xlsx&quot;</span>)<br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">dataset.head()<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
@@ -323,7 +323,7 @@
     vertical-align: top;
 &#125;
 
-.dataframe thead th &#123;output_
+.dataframe thead th &#123;
     text-align: right;
 &#125;
 </code></pre>
@@ -449,7 +449,7 @@
   </tbody>
 </table>
 </div>
-<p>######## 特征描述</p>
+<h4 id="特征描述"><a class="markdownIt-Anchor" href="#特征描述"></a> 特征描述</h4>
 <table>
 <thead>
 <tr>
@@ -524,12 +524,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="二-查看数据详细信息"><a class="markdownIt-Anchor" href="#二-查看数据详细信息"></a> 二、查看数据详细信息</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">dataset.info() <span class="hljs-comment">## 数据整体信息</span><br></code></pre></td></tr></table></figure>
+<h1 id="二-查看数据详细信息"><a class="markdownIt-Anchor" href="#二-查看数据详细信息"></a> 二、查看数据详细信息</h1>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">dataset.info() <span class="hljs-comment"># 数据整体信息</span><br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 4024 entries, 0 to 4023
 Data columns (total 16 columns):
- ##   Column                  Non-Null Count  Dtype 
+ #   Column                  Non-Null Count  Dtype 
 ---  ------                  --------------  ----- 
  0   Age                     4024 non-null   int64 
  1   Race                    4024 non-null   object
@@ -550,7 +550,7 @@ Data columns (total 16 columns):
 dtypes: int64(5), object(11)
 memory usage: 503.1+ KB
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">dataset.nunique()   <span class="hljs-comment">## 查看各列的不同值的数量</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">dataset.nunique()   <span class="hljs-comment"># 查看各列的不同值的数量</span><br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Age                        40
 Race                        3
 Marital Status              5
@@ -569,12 +569,12 @@ Survival Months           107
 Status                      2
 dtype: int64
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">dataset[<span class="hljs-string">&#x27;Status&#x27;</span>].value_counts() <span class="hljs-comment">## 查看列的取值</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">dataset[<span class="hljs-string">&#x27;Status&#x27;</span>].value_counts() <span class="hljs-comment"># 查看列的取值</span><br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Alive    3408
 Dead      616
 Name: Status, dtype: int64
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">dataset.describe() <span class="hljs-comment">## 定量资料的统计描述</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">dataset.describe() <span class="hljs-comment"># 定量资料的统计描述</span><br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -668,9 +668,9 @@ Name: Status, dtype: int64
   </tbody>
 </table>
 </div>
-<h2 id="三-数据可视化探索"><a class="markdownIt-Anchor" href="#三-数据可视化探索"></a> 三、数据可视化探索</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> seaborn <span class="hljs-keyword">as</span> sns<br><br>%matplotlib inline   <br>%config InlineBackend.figure_format = <span class="hljs-string">&#x27;retina&#x27;</span> <br><br>plt.rcParams[<span class="hljs-string">&#x27;font.sans-serif&#x27;</span>] = [<span class="hljs-string">&#x27;FangSong&#x27;</span>]    <span class="hljs-comment">## 指定字体，比如FangSong(仿宋)</span><br>plt.rcParams[<span class="hljs-string">&#x27;axes.unicode_minus&#x27;</span>] = <span class="hljs-literal">False</span>    <span class="hljs-comment">## 正常显示符号（-）</span><br></code></pre></td></tr></table></figure>
-<h6 id="绘图基础"><a class="markdownIt-Anchor" href="#绘图基础"></a> 绘图基础</h6>
+<h1 id="三-数据可视化探索"><a class="markdownIt-Anchor" href="#三-数据可视化探索"></a> 三、数据可视化探索</h1>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> seaborn <span class="hljs-keyword">as</span> sns<br><br><span class="hljs-comment"># %matplotlib inline   </span><br><span class="hljs-comment"># %config InlineBackend.figure_format = &#x27;retina&#x27; </span><br><span class="hljs-comment"># plt.rcParams[&#x27;font.sans-serif&#x27;] = [&#x27;FangSong&#x27;]    # 指定字体，比如FangSong(仿宋)</span><br><span class="hljs-comment"># plt.rcParams[&#x27;axes.unicode_minus&#x27;] = False    # 正常显示符号（-）</span><br></code></pre></td></tr></table></figure>
+<h3 id="绘图基础"><a class="markdownIt-Anchor" href="#绘图基础"></a> 绘图基础</h3>
 <ul>
 <li>画布，坐标系: fig, ax = plt.subplots(nrows, ncols, figsize=(m,n))</li>
 <li>直条图: sns.countplot(data, x, y, hue, ax)</li>
@@ -684,32 +684,32 @@ Name: Status, dtype: int64
 <li>保存图片: plt.savefig(filename, dpi=300, bbox_inches=‘tight’)</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">fig1, ax1 = plt.subplots(figsize=(<span class="hljs-number">6</span>,<span class="hljs-number">4</span>))<br>sns.scatterplot(data=dataset, x=<span class="hljs-string">&#x27;Reginol Node Positive&#x27;</span>, y=<span class="hljs-string">&#x27;Survival Months&#x27;</span>, ax=ax1)<br><br>ax1.set_title(<span class="hljs-string">&#x27;淋巴结转移阳性数量与生存时间的散点图&#x27;</span>)<br>ax1.set_xlabel(<span class="hljs-string">&#x27;淋巴结转移阳性数量&#x27;</span>)<br>ax1.set_ylabel(<span class="hljs-string">&#x27;生存时间&#x27;</span>)<br><br>plt.savefig(<span class="hljs-string">&#x27;1.tif&#x27;</span>, dpi=<span class="hljs-number">300</span>, bbox_inches=<span class="hljs-string">&#x27;tight&#x27;</span>)<br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_13_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
-<h4 id="一定性数据可视化探索"><a class="markdownIt-Anchor" href="#一定性数据可视化探索"></a> （一）定性数据可视化探索</h4>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(nrows=<span class="hljs-number">1</span>, ncols=<span class="hljs-number">2</span>, figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">4</span>))  <br>ax1 = ax[<span class="hljs-number">0</span>]    <span class="hljs-comment">## 坐标系1</span><br>ax2 = ax[<span class="hljs-number">1</span>]    <span class="hljs-comment">## 坐标系2</span><br><br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax1, x=<span class="hljs-string">&#x27;Race&#x27;</span>,    )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax2, x=<span class="hljs-string">&#x27;Marital Status&#x27;</span>,)<br><br>plt.tight_layout() <span class="hljs-comment">## 自适应排版</span><br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_15_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(nrows=<span class="hljs-number">1</span>, ncols=<span class="hljs-number">2</span>, figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">4</span>))  <br>ax1 = ax[<span class="hljs-number">0</span>]    <span class="hljs-comment">## 坐标系1</span><br>ax2 = ax[<span class="hljs-number">1</span>]    <span class="hljs-comment">## 坐标系2</span><br><br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax1, x=<span class="hljs-string">&#x27;Estrogen Status&#x27;</span>,    )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax2, x=<span class="hljs-string">&#x27;Progesterone Status&#x27;</span>,)<br><br>plt.tight_layout() <span class="hljs-comment">## 自适应排版</span><br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_16_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, axes = plt.subplots(nrows=<span class="hljs-number">2</span>, ncols=<span class="hljs-number">3</span>, figsize=(<span class="hljs-number">14</span>,<span class="hljs-number">8</span>))<br>ax1 = axes[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]<br>ax2 = axes[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>]<br>ax3 = axes[<span class="hljs-number">0</span>,<span class="hljs-number">2</span>]<br>ax4 = axes[<span class="hljs-number">1</span>,<span class="hljs-number">0</span>]<br>ax5 = axes[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>]<br>ax6 = axes[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>]<br><br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax1, x=<span class="hljs-string">&#x27;T Stage &#x27;</span>,     )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax2, x=<span class="hljs-string">&#x27;N Stage&#x27;</span>,      )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax3, x=<span class="hljs-string">&#x27;6th Stage&#x27;</span>,    )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax4, x=<span class="hljs-string">&#x27;A Stage&#x27;</span>,      )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax5, x=<span class="hljs-string">&#x27;differentiate&#x27;</span>,)<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax6, x=<span class="hljs-string">&#x27;Grade&#x27;</span>,        )<br><br>plt.setp(ax5.get_xticklabels(), rotation=<span class="hljs-number">30</span>, ha=<span class="hljs-string">&quot;right&quot;</span>)  <span class="hljs-comment">## 旋转刻度值标签</span><br><br>plt.tight_layout() <br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_17_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
-<h4 id="二定量数据可视化探索"><a class="markdownIt-Anchor" href="#二定量数据可视化探索"></a> （二）定量数据可视化探索</h4>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 直方图</span><br>fig, ax = plt.subplots(figsize=(<span class="hljs-number">6</span>,<span class="hljs-number">4</span>))<br><br>sns.histplot(data=dataset, bins=<span class="hljs-number">20</span>, kde=<span class="hljs-literal">True</span>, ax=ax, x=<span class="hljs-string">&#x27;Age&#x27;</span>)<br><br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_13_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
+<h2 id="一定性数据可视化探索"><a class="markdownIt-Anchor" href="#一定性数据可视化探索"></a> （一）定性数据可视化探索</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(nrows=<span class="hljs-number">1</span>, ncols=<span class="hljs-number">2</span>, figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">4</span>))  <br>ax1 = ax[<span class="hljs-number">0</span>]    <span class="hljs-comment"># 坐标系1</span><br>ax2 = ax[<span class="hljs-number">1</span>]    <span class="hljs-comment"># 坐标系2</span><br><br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax1, x=<span class="hljs-string">&#x27;Race&#x27;</span>,    )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax2, x=<span class="hljs-string">&#x27;Marital Status&#x27;</span>,)<br><br>plt.tight_layout() <span class="hljs-comment"># 自适应排版</span><br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_15_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(nrows=<span class="hljs-number">1</span>, ncols=<span class="hljs-number">2</span>, figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">4</span>))  <br>ax1 = ax[<span class="hljs-number">0</span>]    <span class="hljs-comment"># 坐标系1</span><br>ax2 = ax[<span class="hljs-number">1</span>]    <span class="hljs-comment"># 坐标系2</span><br><br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax1, x=<span class="hljs-string">&#x27;Estrogen Status&#x27;</span>,    )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax2, x=<span class="hljs-string">&#x27;Progesterone Status&#x27;</span>,)<br><br>plt.tight_layout() <span class="hljs-comment"># 自适应排版</span><br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_16_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, axes = plt.subplots(nrows=<span class="hljs-number">2</span>, ncols=<span class="hljs-number">3</span>, figsize=(<span class="hljs-number">14</span>,<span class="hljs-number">8</span>))<br>ax1 = axes[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]<br>ax2 = axes[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>]<br>ax3 = axes[<span class="hljs-number">0</span>,<span class="hljs-number">2</span>]<br>ax4 = axes[<span class="hljs-number">1</span>,<span class="hljs-number">0</span>]<br>ax5 = axes[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>]<br>ax6 = axes[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>]<br><br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax1, x=<span class="hljs-string">&#x27;T Stage &#x27;</span>,     )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax2, x=<span class="hljs-string">&#x27;N Stage&#x27;</span>,      )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax3, x=<span class="hljs-string">&#x27;6th Stage&#x27;</span>,    )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax4, x=<span class="hljs-string">&#x27;A Stage&#x27;</span>,      )<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax5, x=<span class="hljs-string">&#x27;differentiate&#x27;</span>,)<br>sns.countplot(data=dataset, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, ax=ax6, x=<span class="hljs-string">&#x27;Grade&#x27;</span>,        )<br><br>plt.setp(ax5.get_xticklabels(), rotation=<span class="hljs-number">30</span>, ha=<span class="hljs-string">&quot;right&quot;</span>)  <span class="hljs-comment"># 旋转刻度值标签</span><br><br>plt.tight_layout() <br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_17_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
+<h2 id="二定量数据可视化探索"><a class="markdownIt-Anchor" href="#二定量数据可视化探索"></a> （二）定量数据可视化探索</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 直方图</span><br>fig, ax = plt.subplots(figsize=(<span class="hljs-number">6</span>,<span class="hljs-number">4</span>))<br><br>sns.histplot(data=dataset, bins=<span class="hljs-number">20</span>, kde=<span class="hljs-literal">True</span>, ax=ax, x=<span class="hljs-string">&#x27;Age&#x27;</span>)<br><br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">&lt;AxesSubplot:xlabel='Age', ylabel='Count'&gt;
 </code></pre>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_19_1.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 箱线图</span><br>fig, ax = plt.subplots(figsize=(<span class="hljs-number">6</span>,<span class="hljs-number">4</span>)) <br><br>sns.boxplot(data=dataset, ax=ax, x=<span class="hljs-string">&#x27;Status&#x27;</span>, y=<span class="hljs-string">&#x27;Age&#x27;</span>)<br><br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_19_1.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 箱线图</span><br>fig, ax = plt.subplots(figsize=(<span class="hljs-number">6</span>,<span class="hljs-number">4</span>)) <br><br>sns.boxplot(data=dataset, ax=ax, x=<span class="hljs-string">&#x27;Status&#x27;</span>, y=<span class="hljs-string">&#x27;Age&#x27;</span>)<br><br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">&lt;AxesSubplot:xlabel='Status', ylabel='Age'&gt;
 </code></pre>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_20_1.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_20_1.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(nrows=<span class="hljs-number">1</span>, ncols=<span class="hljs-number">2</span>, figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">4</span>))  <br>ax1 = ax[<span class="hljs-number">0</span>]<br>ax2 = ax[<span class="hljs-number">1</span>]<br><br>sns.histplot(data=dataset, bins=<span class="hljs-number">20</span>, kde=<span class="hljs-literal">True</span>, ax=ax1, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, x=<span class="hljs-string">&#x27;Age&#x27;</span>)<br>sns.boxplot(data=dataset, ax=ax2, x=<span class="hljs-string">&#x27;Status&#x27;</span>, y=<span class="hljs-string">&#x27;Age&#x27;</span>)<br><br>plt.tight_layout() <br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_21_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_21_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(nrows=<span class="hljs-number">1</span>, ncols=<span class="hljs-number">2</span>, figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">4</span>))  <br>ax1 = ax[<span class="hljs-number">0</span>]<br>ax2 = ax[<span class="hljs-number">1</span>]<br><br>sns.histplot(data=dataset, bins=<span class="hljs-number">20</span>, kde=<span class="hljs-literal">True</span>, ax=ax1, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, x=<span class="hljs-string">&#x27;Tumor Size&#x27;</span>)<br>sns.boxplot(data=dataset, ax=ax2, x=<span class="hljs-string">&#x27;Status&#x27;</span>, y=<span class="hljs-string">&#x27;Tumor Size&#x27;</span>)<br><br>plt.tight_layout() <br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_22_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_22_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(nrows=<span class="hljs-number">1</span>, ncols=<span class="hljs-number">2</span>, figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">4</span>))  <br>ax1 = ax[<span class="hljs-number">0</span>]<br>ax2 = ax[<span class="hljs-number">1</span>]<br><br>sns.histplot(data=dataset, bins=<span class="hljs-number">20</span>, kde=<span class="hljs-literal">True</span>, ax=ax1, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, x=<span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>)<br>sns.boxplot(data=dataset, ax=ax2, x=<span class="hljs-string">&#x27;Status&#x27;</span>, y=<span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>)<br><br>plt.tight_layout() <br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_23_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_23_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(nrows=<span class="hljs-number">1</span>, ncols=<span class="hljs-number">2</span>, figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">4</span>))  <br>ax1 = ax[<span class="hljs-number">0</span>]<br>ax2 = ax[<span class="hljs-number">1</span>]<br><br>sns.histplot(data=dataset, bins=<span class="hljs-number">20</span>, kde=<span class="hljs-literal">True</span>, ax=ax1, hue=<span class="hljs-string">&#x27;Status&#x27;</span>, x=<span class="hljs-string">&#x27;Reginol Node Positive&#x27;</span>)<br>sns.boxplot(data=dataset, ax=ax2, x=<span class="hljs-string">&#x27;Status&#x27;</span>, y=<span class="hljs-string">&#x27;Reginol Node Positive&#x27;</span>)<br><br>plt.tight_layout() <br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_24_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
-<h2 id="四-数据预处理"><a class="markdownIt-Anchor" href="#四-数据预处理"></a> 四、数据预处理</h2>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_24_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
+<h1 id="四-数据预处理"><a class="markdownIt-Anchor" href="#四-数据预处理"></a> 四、数据预处理</h1>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">df = dataset.copy()<br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">df.head()<br></code></pre></td></tr></table></figure>
 <div>
@@ -854,7 +854,7 @@ Name: Status, dtype: int64
        'Reginol Node Positive', 'Survival Months', 'Status'],
       dtype='object')
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 列名（特征名）重命名</span><br>df.columns = [<span class="hljs-string">&#x27;Age&#x27;</span>, <span class="hljs-string">&#x27;Race&#x27;</span>, <span class="hljs-string">&#x27;Marital Status&#x27;</span>, <span class="hljs-string">&#x27;T Stage&#x27;</span>, <span class="hljs-string">&#x27;N Stage&#x27;</span>, <span class="hljs-string">&#x27;6th Stage&#x27;</span>,<br>              <span class="hljs-string">&#x27;differentiate&#x27;</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>, <span class="hljs-string">&#x27;A Stage&#x27;</span>, <span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Estrogen Status&#x27;</span>,<br>              <span class="hljs-string">&#x27;Progesterone Status&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>,<br>              <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>, <span class="hljs-string">&#x27;Status&#x27;</span>]<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 列名（特征名）重命名</span><br>df.columns = [<span class="hljs-string">&#x27;Age&#x27;</span>, <span class="hljs-string">&#x27;Race&#x27;</span>, <span class="hljs-string">&#x27;Marital Status&#x27;</span>, <span class="hljs-string">&#x27;T Stage&#x27;</span>, <span class="hljs-string">&#x27;N Stage&#x27;</span>, <span class="hljs-string">&#x27;6th Stage&#x27;</span>,<br>              <span class="hljs-string">&#x27;differentiate&#x27;</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>, <span class="hljs-string">&#x27;A Stage&#x27;</span>, <span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Estrogen Status&#x27;</span>,<br>              <span class="hljs-string">&#x27;Progesterone Status&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>,<br>              <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>, <span class="hljs-string">&#x27;Status&#x27;</span>]<br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">df.columns<br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Index(['Age', 'Race', 'Marital Status', 'T Stage', 'N Stage', '6th Stage',
        'differentiate', 'Grade', 'A Stage', 'Tumor Size', 'Estrogen Status',
@@ -869,7 +869,7 @@ Name: Status, dtype: int64
  anaplastic; Grade IV      19
 Name: Grade, dtype: int64
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 变量值重编码 df.loc[index, columns_name] = value</span><br><br>df.loc[df[<span class="hljs-string">&#x27;Grade&#x27;</span>]==<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>] = <span class="hljs-string">&#x27;Ⅰ&#x27;</span><br>df.loc[df[<span class="hljs-string">&#x27;Grade&#x27;</span>]==<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>] = <span class="hljs-string">&#x27;Ⅱ&#x27;</span><br>df.loc[df[<span class="hljs-string">&#x27;Grade&#x27;</span>]==<span class="hljs-number">3</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>] = <span class="hljs-string">&#x27;Ⅲ&#x27;</span><br>df.loc[df[<span class="hljs-string">&#x27;Grade&#x27;</span>]==<span class="hljs-string">&#x27; anaplastic; Grade IV&#x27;</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>] = <span class="hljs-string">&#x27;IV&#x27;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 变量值重编码 df.loc[index, columns_name] = value</span><br><br>df.loc[df[<span class="hljs-string">&#x27;Grade&#x27;</span>]==<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>] = <span class="hljs-string">&#x27;Ⅰ&#x27;</span><br>df.loc[df[<span class="hljs-string">&#x27;Grade&#x27;</span>]==<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>] = <span class="hljs-string">&#x27;Ⅱ&#x27;</span><br>df.loc[df[<span class="hljs-string">&#x27;Grade&#x27;</span>]==<span class="hljs-number">3</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>] = <span class="hljs-string">&#x27;Ⅲ&#x27;</span><br>df.loc[df[<span class="hljs-string">&#x27;Grade&#x27;</span>]==<span class="hljs-string">&#x27; anaplastic; Grade IV&#x27;</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>] = <span class="hljs-string">&#x27;IV&#x27;</span><br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">df[<span class="hljs-string">&#x27;Grade&#x27;</span>].value_counts()<br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Ⅱ     2351
 Ⅲ     1111
@@ -1035,7 +1035,7 @@ Name: Age, dtype: int64
   </tbody>
 </table>
 </div>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 数据逻辑判断</span><br>df.loc[df[<span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>]&gt;df[<span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>],:]<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 数据逻辑判断</span><br>df.loc[df[<span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>]&gt;df[<span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>],:]<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1076,8 +1076,8 @@ Name: Age, dtype: int64
   </tbody>
 </table>
 </div>
-<h2 id="五-统计检验"><a class="markdownIt-Anchor" href="#五-统计检验"></a> 五、统计检验</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 正态性检验 Shapiro–Wilk test</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> shapiro<br><br>num_columns = [<span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    stat,p = shapiro(df[column])<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值为：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
+<h1 id="五-统计检验"><a class="markdownIt-Anchor" href="#五-统计检验"></a> 五、统计检验</h1>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 正态性检验 Shapiro–Wilk test</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> shapiro<br><br>num_columns = [<span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    stat,p = shapiro(df[column])<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值为：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Tumor Size 
  统计量：0.841386   p值为：0.000000 
 
@@ -1090,7 +1090,7 @@ Regional Node Positive
 Survival Months 
  统计量：0.962401   p值为：0.000000 
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 方差齐性检验 levene检验</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> levene<br>num_columns = [<span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    d1 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Alive&#x27;</span>, column]<br>    d2 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Dead&#x27;</span>, column]<br>    stat, p = levene(d1, d2)<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值为：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 方差齐性检验 levene检验</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> levene<br>num_columns = [<span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    d1 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Alive&#x27;</span>, column]<br>    d2 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Dead&#x27;</span>, column]<br>    stat, p = levene(d1, d2)<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值为：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Tumor Size 
  统计量：25.620942   p值为：0.000000 
 
@@ -1103,9 +1103,12 @@ Regional Node Positive
 Survival Months 
  统计量：48.542707   p值为：0.000000 
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 独立样本t检验</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> ttest_ind<br>num_columns = [<span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    d1 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Alive&#x27;</span>, column]<br>    d2 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Dead&#x27;</span>, column]<br>    stat,p = ttest_ind(d1,d2)<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值为：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 独立样本t检验</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> ttest_ind<br>num_columns = [<span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    d1 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Alive&#x27;</span>, column]<br>    d2 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Dead&#x27;</span>, column]<br>    stat,p = ttest_ind(d1,d2)<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值为：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Tumor Size 
  统计量：-8.588885   p值为：0.000000 
+
+Regional Node Examined 
+ 统计量：-2.206548   p值为：0.027402 
 
 Regional Node Positive 
  统计量：-16.839798   p值为：0.000000 
@@ -1113,7 +1116,7 @@ Regional Node Positive
 Survival Months 
  统计量：34.373652   p值为：0.000000 
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## Kruskal-wallis H检验</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> kruskal<br>num_columns = [<span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    d1 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Alive&#x27;</span>, column]<br>    d2 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Dead&#x27;</span>, column]<br>    stat,p = kruskal(d1,d2)<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值为：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># Kruskal-wallis H检验</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> kruskal<br>num_columns = [<span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    d1 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Alive&#x27;</span>, column]<br>    d2 = df.loc[df[<span class="hljs-string">&#x27;Status&#x27;</span>]==<span class="hljs-string">&#x27;Dead&#x27;</span>, column]<br>    stat,p = kruskal(d1,d2)<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值为：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Tumor Size 
  统计量：79.489347   p值为：0.000000 
 
@@ -1126,7 +1129,7 @@ Regional Node Positive
 Survival Months 
  统计量：694.131827   p值为：0.000000 
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 卡方检验</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> chi2_contingency<br>num_columns = [<span class="hljs-string">&#x27;Age&#x27;</span>, <span class="hljs-string">&#x27;Race&#x27;</span>, <span class="hljs-string">&#x27;Marital Status&#x27;</span>, <span class="hljs-string">&#x27;T Stage&#x27;</span>, <span class="hljs-string">&#x27;N Stage&#x27;</span>, <span class="hljs-string">&#x27;6th Stage&#x27;</span>,<br>       <span class="hljs-string">&#x27;differentiate&#x27;</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>, <span class="hljs-string">&#x27;A Stage&#x27;</span>, <span class="hljs-string">&#x27;Estrogen Status&#x27;</span>,<span class="hljs-string">&#x27;Progesterone Status&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    stat,p,dof,expected = chi2_contingency(pd.crosstab(df[column],df[<span class="hljs-string">&#x27;Status&#x27;</span>]))<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 卡方检验</span><br><span class="hljs-keyword">from</span> scipy.stats <span class="hljs-keyword">import</span> chi2_contingency<br>num_columns = [<span class="hljs-string">&#x27;Age&#x27;</span>, <span class="hljs-string">&#x27;Race&#x27;</span>, <span class="hljs-string">&#x27;Marital Status&#x27;</span>, <span class="hljs-string">&#x27;T Stage&#x27;</span>, <span class="hljs-string">&#x27;N Stage&#x27;</span>, <span class="hljs-string">&#x27;6th Stage&#x27;</span>,<br>       <span class="hljs-string">&#x27;differentiate&#x27;</span>, <span class="hljs-string">&#x27;Grade&#x27;</span>, <span class="hljs-string">&#x27;A Stage&#x27;</span>, <span class="hljs-string">&#x27;Estrogen Status&#x27;</span>,<span class="hljs-string">&#x27;Progesterone Status&#x27;</span>]<br><span class="hljs-keyword">for</span> column <span class="hljs-keyword">in</span> num_columns:<br>    stat,p,dof,expected = chi2_contingency(pd.crosstab(df[column],df[<span class="hljs-string">&#x27;Status&#x27;</span>]))<br>    <span class="hljs-built_in">print</span>(column, <span class="hljs-string">&quot;\n 统计量：%f &quot;</span> %stat,<span class="hljs-string">&quot; p值：%f \n&quot;</span> %p)<br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Age 
  统计量：15.289546   p值：0.000479 
 
@@ -1160,8 +1163,8 @@ Estrogen Status
 Progesterone Status 
  统计量：124.885388   p值：0.000000 
 </code></pre>
-<h2 id="六-数据编码"><a class="markdownIt-Anchor" href="#六-数据编码"></a> 六、数据编码</h2>
-<h4 id="一定量资料"><a class="markdownIt-Anchor" href="#一定量资料"></a> （一）定量资料</h4>
+<h1 id="六-数据编码"><a class="markdownIt-Anchor" href="#六-数据编码"></a> 六、数据编码</h1>
+<h2 id="一定量资料"><a class="markdownIt-Anchor" href="#一定量资料"></a> （一）定量资料</h2>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">X_num = df[[<span class="hljs-string">&#x27;Tumor Size&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <span class="hljs-string">&#x27;Survival Months&#x27;</span> ]]<br>X_num.head()<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
@@ -1311,7 +1314,7 @@ Progesterone Status
   </tbody>
 </table>
 </div>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 数据标准化</span><br>X_num_norm = (X_num - X_num.mean()) / X_num.std()<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 数据标准化</span><br>X_num_norm = (X_num - X_num.mean()) / X_num.std()<br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">X_num_norm.head()<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
@@ -1461,8 +1464,8 @@ Progesterone Status
   </tbody>
 </table>
 </div>
-<h4 id="二定性资料"><a class="markdownIt-Anchor" href="#二定性资料"></a> (二)定性资料</h4>
-<h6 id="二分类资料或等级资料"><a class="markdownIt-Anchor" href="#二分类资料或等级资料"></a> 二分类资料或等级资料</h6>
+<h2 id="二定性资料"><a class="markdownIt-Anchor" href="#二定性资料"></a> (二)定性资料</h2>
+<h3 id="二分类资料或等级资料"><a class="markdownIt-Anchor" href="#二分类资料或等级资料"></a> 二分类资料或等级资料</h3>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">X_deg = df[[<span class="hljs-string">&#x27;T Stage&#x27;</span>, <span class="hljs-string">&#x27;N Stage&#x27;</span>, <span class="hljs-string">&#x27;6th Stage&#x27;</span>,<span class="hljs-string">&#x27;differentiate&#x27;</span>, <br>            <span class="hljs-string">&#x27;Grade&#x27;</span>, <span class="hljs-string">&#x27;A Stage&#x27;</span>,<span class="hljs-string">&#x27;Estrogen Status&#x27;</span>,<span class="hljs-string">&#x27;Progesterone Status&#x27;</span>,<span class="hljs-string">&#x27;Status&#x27;</span>]]<br><br>X_deg.head()<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
@@ -1557,7 +1560,7 @@ Progesterone Status
   </tbody>
 </table>
 </div>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 编码</span><br>pd.set_option(<span class="hljs-string">&#x27;mode.chained_assignment&#x27;</span>, <span class="hljs-literal">None</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;Status&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;Status&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Alive&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Dead&#x27;</span>:<span class="hljs-number">1</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;Grade&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;Grade&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Ⅰ&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Ⅱ&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;Ⅲ&#x27;</span>:<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;IV&#x27;</span>:<span class="hljs-number">3</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;T Stage&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;T Stage&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;T1&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;T2&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;T3&#x27;</span>:<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;T4&#x27;</span>:<span class="hljs-number">3</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;N Stage&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;N Stage&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;N1&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;N2&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;N3&#x27;</span>:<span class="hljs-number">2</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;A Stage&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;A Stage&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Regional&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Distant&#x27;</span>:<span class="hljs-number">1</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;6th Stage&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;6th Stage&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;IIA&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;IIB&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;IIIA&#x27;</span>:<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;IIIB&#x27;</span>:<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;IIIC&#x27;</span>:<span class="hljs-number">4</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;Estrogen Status&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;Estrogen Status&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Negative&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Positive&#x27;</span>:<span class="hljs-number">1</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;Progesterone Status&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;Progesterone Status&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Negative&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Positive&#x27;</span>:<span class="hljs-number">1</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;differentiate&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;differentiate&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Well differentiated&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Moderately differentiated&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;Poorly differentiated&#x27;</span>:<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;Undifferentiated&#x27;</span>:<span class="hljs-number">3</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 编码</span><br>pd.set_option(<span class="hljs-string">&#x27;mode.chained_assignment&#x27;</span>, <span class="hljs-literal">None</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;Status&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;Status&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Alive&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Dead&#x27;</span>:<span class="hljs-number">1</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;Grade&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;Grade&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Ⅰ&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Ⅱ&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;Ⅲ&#x27;</span>:<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;IV&#x27;</span>:<span class="hljs-number">3</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;T Stage&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;T Stage&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;T1&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;T2&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;T3&#x27;</span>:<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;T4&#x27;</span>:<span class="hljs-number">3</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;N Stage&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;N Stage&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;N1&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;N2&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;N3&#x27;</span>:<span class="hljs-number">2</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;A Stage&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;A Stage&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Regional&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Distant&#x27;</span>:<span class="hljs-number">1</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;6th Stage&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;6th Stage&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;IIA&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;IIB&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;IIIA&#x27;</span>:<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;IIIB&#x27;</span>:<span class="hljs-number">3</span>, <span class="hljs-string">&#x27;IIIC&#x27;</span>:<span class="hljs-number">4</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;Estrogen Status&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;Estrogen Status&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Negative&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Positive&#x27;</span>:<span class="hljs-number">1</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;Progesterone Status&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;Progesterone Status&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Negative&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Positive&#x27;</span>:<span class="hljs-number">1</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br>X_deg.loc[:,<span class="hljs-string">&#x27;differentiate&#x27;</span>] = X_deg[<span class="hljs-string">&#x27;differentiate&#x27;</span>].<span class="hljs-built_in">map</span>(&#123;<span class="hljs-string">&#x27;Well differentiated&#x27;</span>:<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Moderately differentiated&#x27;</span>:<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;Poorly differentiated&#x27;</span>:<span class="hljs-number">2</span>, <span class="hljs-string">&#x27;Undifferentiated&#x27;</span>:<span class="hljs-number">3</span>&#125;).astype(<span class="hljs-string">&quot;int64&quot;</span>)<br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">X_deg.head()<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
@@ -1652,7 +1655,7 @@ Progesterone Status
   </tbody>
 </table>
 </div>
-<h6 id="无序多分类变量"><a class="markdownIt-Anchor" href="#无序多分类变量"></a> 无序多分类变量</h6>
+<h3 id="无序多分类变量"><a class="markdownIt-Anchor" href="#无序多分类变量"></a> 无序多分类变量</h3>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">X_cat = df[[<span class="hljs-string">&#x27;Age&#x27;</span>,<span class="hljs-string">&#x27;Race&#x27;</span>,<span class="hljs-string">&#x27;Marital Status&#x27;</span>]]<br>X_cat.head()<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
@@ -1711,7 +1714,7 @@ Progesterone Status
   </tbody>
 </table>
 </div>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 哑变量编码</span><br>X_cat = pd.get_dummies(X_cat)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 哑变量编码</span><br>X_cat = pd.get_dummies(X_cat)<br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">X_cat.head()<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
@@ -1806,7 +1809,7 @@ Progesterone Status
   </tbody>
 </table>
 </div>
-<h6 id="合并编码后的数据资料"><a class="markdownIt-Anchor" href="#合并编码后的数据资料"></a> 合并编码后的数据资料</h6>
+<h3 id="合并编码后的数据资料"><a class="markdownIt-Anchor" href="#合并编码后的数据资料"></a> 合并编码后的数据资料</h3>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">data = pd.concat([X_num_norm, X_cat, X_deg], axis=<span class="hljs-number">1</span>)<br>data.head()<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
@@ -1978,7 +1981,7 @@ Progesterone Status
 <pre><code class="hljs">&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 4024 entries, 0 to 4023
 Data columns (total 22 columns):
- ##   Column                  Non-Null Count  Dtype  
+ #   Column                  Non-Null Count  Dtype  
 ---  ------                  --------------  -----  
  0   Tumor Size              4024 non-null   float64
  1   Regional Node Examined  4024 non-null   float64
@@ -2005,14 +2008,14 @@ Data columns (total 22 columns):
 dtypes: float64(4), int64(9), uint8(9)
 memory usage: 444.2 KB
 </code></pre>
-<h2 id="七-相关性分析"><a class="markdownIt-Anchor" href="#七-相关性分析"></a> 七、相关性分析</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 散点图</span><br>fig, ax = plt.subplots(figsize=(<span class="hljs-number">6</span>,<span class="hljs-number">4</span>))<br>sns.scatterplot(data=data, x=<span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, y=<span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <br>                     hue=<span class="hljs-string">&#x27;Status&#x27;</span>, palette=<span class="hljs-string">&#x27;Blues&#x27;</span>, ax=ax)<br><br>plt.show()<br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_67_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 相关系数矩阵</span><br>dcorr = data.corr(method=<span class="hljs-string">&#x27;spearman&#x27;</span>)<br><span class="hljs-comment">## dcorr</span><br></code></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 相关系数热图</span><br>fig, ax = plt.subplots(figsize=(<span class="hljs-number">20</span>,<span class="hljs-number">16</span>))<br>sns.heatmap(dcorr, cmap=<span class="hljs-string">&#x27;Blues&#x27;</span>, annot=<span class="hljs-literal">True</span>, fmt=<span class="hljs-string">&#x27;.2f&#x27;</span>, linewidths=<span class="hljs-number">2</span>, linecolor=<span class="hljs-string">&#x27;white&#x27;</span>, square=<span class="hljs-literal">True</span>, ax=ax)<br><br>ax.tick_params(bottom=<span class="hljs-literal">False</span>, labelbottom=<span class="hljs-literal">False</span>, top=<span class="hljs-literal">True</span>, labeltop=<span class="hljs-literal">True</span>)  <span class="hljs-comment">##修改坐标轴显示</span><br>plt.setp(ax.get_xticklabels(), rotation= <span class="hljs-number">60</span>, ha=<span class="hljs-string">&quot;left&quot;</span>)    <span class="hljs-comment">## 旋转坐标轴标签的显示方向</span><br><br>plt.show()<br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_69_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
-<h2 id="八-逻辑回归分析"><a class="markdownIt-Anchor" href="#八-逻辑回归分析"></a> 八、逻辑回归分析</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">X = data.iloc[:, :-<span class="hljs-number">1</span>]<br><span class="hljs-comment">## 人工添加截距项</span><br>X[<span class="hljs-string">&#x27;intercept&#x27;</span>] = <span class="hljs-number">1.0</span> <br>X.head()<br></code></pre></td></tr></table></figure>
+<h1 id="七-相关性分析"><a class="markdownIt-Anchor" href="#七-相关性分析"></a> 七、相关性分析</h1>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 散点图</span><br>fig, ax = plt.subplots(figsize=(<span class="hljs-number">6</span>,<span class="hljs-number">4</span>))<br>sns.scatterplot(data=data, x=<span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, y=<span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>, <br>                     hue=<span class="hljs-string">&#x27;Status&#x27;</span>, palette=<span class="hljs-string">&#x27;Blues&#x27;</span>, ax=ax)<br><br>plt.show()<br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_67_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 相关系数矩阵</span><br>dcorr = data.corr(method=<span class="hljs-string">&#x27;spearman&#x27;</span>)<br><span class="hljs-comment"># dcorr</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 相关系数热图</span><br>fig, ax = plt.subplots(figsize=(<span class="hljs-number">20</span>,<span class="hljs-number">16</span>))<br>sns.heatmap(dcorr, cmap=<span class="hljs-string">&#x27;Blues&#x27;</span>, annot=<span class="hljs-literal">True</span>, fmt=<span class="hljs-string">&#x27;.2f&#x27;</span>, linewidths=<span class="hljs-number">2</span>, linecolor=<span class="hljs-string">&#x27;white&#x27;</span>, square=<span class="hljs-literal">True</span>, ax=ax)<br><br>ax.tick_params(bottom=<span class="hljs-literal">False</span>, labelbottom=<span class="hljs-literal">False</span>, top=<span class="hljs-literal">True</span>, labeltop=<span class="hljs-literal">True</span>)  <span class="hljs-comment">#修改坐标轴显示</span><br>plt.setp(ax.get_xticklabels(), rotation= <span class="hljs-number">60</span>, ha=<span class="hljs-string">&quot;left&quot;</span>)    <span class="hljs-comment"># 旋转坐标轴标签的显示方向</span><br><br>plt.show()<br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_69_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
+<h1 id="八-逻辑回归分析"><a class="markdownIt-Anchor" href="#八-逻辑回归分析"></a> 八、逻辑回归分析</h1>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">X = data.iloc[:, :-<span class="hljs-number">1</span>]<br><span class="hljs-comment"># 人工添加截距项</span><br>X[<span class="hljs-string">&#x27;intercept&#x27;</span>] = <span class="hljs-number">1.0</span> <br>X.head()<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2179,7 +2182,7 @@ memory usage: 444.2 KB
 </table>
 <p>5 rows × 22 columns</p>
 </div>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## 划分训练数据和测试数据</span><br>x_train, y_train = X.iloc[:<span class="hljs-number">3001</span>, :], data.iloc[:<span class="hljs-number">3001</span>, -<span class="hljs-number">1</span>]<br>x_test,  y_test  = X.iloc[<span class="hljs-number">3001</span>:, :], data.iloc[<span class="hljs-number">3001</span>:, -<span class="hljs-number">1</span>]<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># # 划分训练数据和测试数据</span><br><span class="hljs-comment"># x_train, y_train = X.iloc[:3001, :], data.iloc[:3001, -1]</span><br><span class="hljs-comment"># x_test,  y_test  = X.iloc[3001:, :], data.iloc[3001:, -1]</span><br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">X.columns<br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Index(['Tumor Size', 'Regional Node Examined', 'Regional Node Positive',
        'Survival Months', 'Age_elderly', 'Age_middle aged', 'Age_thirties',
@@ -2189,34 +2192,34 @@ memory usage: 444.2 KB
        'Progesterone Status', 'intercept'],
       dtype='object')
 </code></pre>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">cols = [<span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>,<br>       <span class="hljs-string">&#x27;Race_Other&#x27;</span>,<br>       <span class="hljs-string">&#x27;Marital Status_Other&#x27;</span>, <span class="hljs-string">&#x27;T Stage&#x27;</span>, <span class="hljs-string">&#x27;N Stage&#x27;</span>,<br>       <span class="hljs-string">&#x27;Grade&#x27;</span>, <span class="hljs-string">&#x27;Estrogen Status&#x27;</span>,<br>       <span class="hljs-string">&#x27;Progesterone Status&#x27;</span>, <span class="hljs-string">&#x27;intercept&#x27;</span>]<br></code></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> statsmodels.api <span class="hljs-keyword">as</span> sm<br><span class="hljs-keyword">import</span> statsmodels.formula.api <span class="hljs-keyword">as</span> smf<br><br>model = sm.Logit(y_train, x_train[cols]).fit()<br>model.summary()    <span class="hljs-comment">## Logit分析结果</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python">cols = [<span class="hljs-string">&#x27;Regional Node Examined&#x27;</span>, <span class="hljs-string">&#x27;Regional Node Positive&#x27;</span>,<br>       <span class="hljs-string">&#x27;Age_middle aged&#x27;</span>,<span class="hljs-string">&#x27;Age_elderly&#x27;</span>,<br>       <span class="hljs-string">&#x27;Race_Black&#x27;</span>, <span class="hljs-string">&#x27;Race_Other&#x27;</span>, <br>       <span class="hljs-string">&#x27;Marital Status_Other&#x27;</span>, <span class="hljs-string">&#x27;Marital Status_Single &#x27;</span>, <span class="hljs-string">&#x27;T Stage&#x27;</span>, <span class="hljs-string">&#x27;N Stage&#x27;</span>,<br>       <span class="hljs-string">&#x27;Grade&#x27;</span>, <span class="hljs-string">&#x27;Estrogen Status&#x27;</span>,<br>       <span class="hljs-string">&#x27;Progesterone Status&#x27;</span>, <span class="hljs-string">&#x27;intercept&#x27;</span>]<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> statsmodels.api <span class="hljs-keyword">as</span> sm<br><span class="hljs-keyword">import</span> statsmodels.formula.api <span class="hljs-keyword">as</span> smf<br><br><span class="hljs-comment"># model = sm.Logit(y_train, x_train[cols]).fit()</span><br>model = sm.Logit(data.iloc[:, -<span class="hljs-number">1</span>], X[cols]).fit()<br><br>model.summary()    <span class="hljs-comment"># Logit分析结果</span><br></code></pre></td></tr></table></figure>
 <pre><code class="hljs">Optimization terminated successfully.
-         Current function value: 0.376407
-         Iterations 6
+         Current function value: 0.369082
+         Iterations 7
 </code></pre>
 <table class="simpletable">
 <caption>Logit Regression Results</caption>
 <tr>
-  <th>Dep. Variable:</th>        <td>Status</td>      <th>  No. Observations:  </th>  <td>  3001</td>  
+  <th>Dep. Variable:</th>        <td>Status</td>      <th>  No. Observations:  </th>  <td>  4024</td>  
 </tr>
 <tr>
-  <th>Model:</th>                 <td>Logit</td>      <th>  Df Residuals:      </th>  <td>  2992</td>  
+  <th>Model:</th>                 <td>Logit</td>      <th>  Df Residuals:      </th>  <td>  4010</td>  
 </tr>
 <tr>
-  <th>Method:</th>                 <td>MLE</td>       <th>  Df Model:          </th>  <td>     8</td>  
+  <th>Method:</th>                 <td>MLE</td>       <th>  Df Model:          </th>  <td>    13</td>  
 </tr>
 <tr>
-  <th>Date:</th>            <td>Tue, 15 Nov 2022</td> <th>  Pseudo R-squ.:     </th>  <td>0.1316</td>  
+  <th>Date:</th>            <td>Thu, 24 Nov 2022</td> <th>  Pseudo R-squ.:     </th>  <td>0.1377</td>  
 </tr>
 <tr>
-  <th>Time:</th>                <td>20:11:51</td>     <th>  Log-Likelihood:    </th> <td> -1129.6</td> 
+  <th>Time:</th>                <td>20:48:45</td>     <th>  Log-Likelihood:    </th> <td> -1485.2</td> 
 </tr>
 <tr>
-  <th>converged:</th>             <td>True</td>       <th>  LL-Null:           </th> <td> -1300.8</td> 
+  <th>converged:</th>             <td>True</td>       <th>  LL-Null:           </th> <td> -1722.3</td> 
 </tr>
 <tr>
-  <th>Covariance Type:</th>     <td>nonrobust</td>    <th>  LLR p-value:       </th> <td>3.829e-69</td>
+  <th>Covariance Type:</th>     <td>nonrobust</td>    <th>  LLR p-value:       </th> <td>4.157e-93</td>
 </tr>
 </table>
 <table class="simpletable">
@@ -2224,34 +2227,49 @@ memory usage: 444.2 KB
              <td></td>               <th>coef</th>     <th>std err</th>      <th>z</th>      <th>P>|z|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>Regional Node Positive</th> <td>    0.2389</td> <td>    0.076</td> <td>    3.152</td> <td> 0.002</td> <td>    0.090</td> <td>    0.387</td>
+  <th>Regional Node Examined</th> <td>   -0.2905</td> <td>    0.058</td> <td>   -5.013</td> <td> 0.000</td> <td>   -0.404</td> <td>   -0.177</td>
 </tr>
 <tr>
-  <th>Race_Other</th>             <td>   -0.5105</td> <td>    0.230</td> <td>   -2.223</td> <td> 0.026</td> <td>   -0.961</td> <td>   -0.060</td>
+  <th>Regional Node Positive</th> <td>    0.3761</td> <td>    0.073</td> <td>    5.151</td> <td> 0.000</td> <td>    0.233</td> <td>    0.519</td>
 </tr>
 <tr>
-  <th>Marital Status_Other</th>   <td>    0.2924</td> <td>    0.130</td> <td>    2.254</td> <td> 0.024</td> <td>    0.038</td> <td>    0.547</td>
+  <th>Age_middle aged</th>        <td>   -0.4149</td> <td>    0.205</td> <td>   -2.026</td> <td> 0.043</td> <td>   -0.816</td> <td>   -0.013</td>
 </tr>
 <tr>
-  <th>T Stage</th>                <td>    0.3337</td> <td>    0.068</td> <td>    4.897</td> <td> 0.000</td> <td>    0.200</td> <td>    0.467</td>
+  <th>Age_elderly</th>            <td>   -0.0760</td> <td>    0.191</td> <td>   -0.397</td> <td> 0.691</td> <td>   -0.451</td> <td>    0.299</td>
 </tr>
 <tr>
-  <th>N Stage</th>                <td>    0.4330</td> <td>    0.120</td> <td>    3.621</td> <td> 0.000</td> <td>    0.199</td> <td>    0.667</td>
+  <th>Race_Black</th>             <td>    0.5069</td> <td>    0.161</td> <td>    3.157</td> <td> 0.002</td> <td>    0.192</td> <td>    0.822</td>
 </tr>
 <tr>
-  <th>Grade</th>                  <td>    0.3430</td> <td>    0.089</td> <td>    3.848</td> <td> 0.000</td> <td>    0.168</td> <td>    0.518</td>
+  <th>Race_Other</th>             <td>   -0.4521</td> <td>    0.202</td> <td>   -2.242</td> <td> 0.025</td> <td>   -0.847</td> <td>   -0.057</td>
 </tr>
 <tr>
-  <th>Estrogen Status</th>        <td>   -0.7753</td> <td>    0.201</td> <td>   -3.864</td> <td> 0.000</td> <td>   -1.169</td> <td>   -0.382</td>
+  <th>Marital Status_Other</th>   <td>    0.3056</td> <td>    0.117</td> <td>    2.602</td> <td> 0.009</td> <td>    0.075</td> <td>    0.536</td>
 </tr>
 <tr>
-  <th>Progesterone Status</th>    <td>   -0.5380</td> <td>    0.148</td> <td>   -3.645</td> <td> 0.000</td> <td>   -0.827</td> <td>   -0.249</td>
+  <th>Marital Status_Single </th> <td>    0.1097</td> <td>    0.134</td> <td>    0.819</td> <td> 0.413</td> <td>   -0.153</td> <td>    0.372</td>
 </tr>
 <tr>
-  <th>intercept</th>              <td>   -1.6248</td> <td>    0.230</td> <td>   -7.073</td> <td> 0.000</td> <td>   -2.075</td> <td>   -1.175</td>
+  <th>T Stage</th>                <td>    0.3083</td> <td>    0.061</td> <td>    5.083</td> <td> 0.000</td> <td>    0.189</td> <td>    0.427</td>
+</tr>
+<tr>
+  <th>N Stage</th>                <td>    0.3467</td> <td>    0.106</td> <td>    3.256</td> <td> 0.001</td> <td>    0.138</td> <td>    0.555</td>
+</tr>
+<tr>
+  <th>Grade</th>                  <td>    0.4238</td> <td>    0.079</td> <td>    5.383</td> <td> 0.000</td> <td>    0.270</td> <td>    0.578</td>
+</tr>
+<tr>
+  <th>Estrogen Status</th>        <td>   -0.7030</td> <td>    0.176</td> <td>   -3.998</td> <td> 0.000</td> <td>   -1.048</td> <td>   -0.358</td>
+</tr>
+<tr>
+  <th>Progesterone Status</th>    <td>   -0.5845</td> <td>    0.127</td> <td>   -4.602</td> <td> 0.000</td> <td>   -0.833</td> <td>   -0.336</td>
+</tr>
+<tr>
+  <th>intercept</th>              <td>   -1.6366</td> <td>    0.272</td> <td>   -6.027</td> <td> 0.000</td> <td>   -2.169</td> <td>   -1.104</td>
 </tr>
 </table>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">## OR值 和 95%置信区间</span><br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><br>params = np.exp(model.params)<br>conf = np.exp(model.conf_int())<br>conf[<span class="hljs-string">&#x27;OR&#x27;</span>] = params<br>conf.columns = [<span class="hljs-string">&#x27;2.5%&#x27;</span>,<span class="hljs-string">&#x27;97.5%&#x27;</span>,<span class="hljs-string">&#x27;OR&#x27;</span>]<br>conf<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># OR值 和 95%置信区间</span><br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><br>params = np.exp(model.params)<br>conf = np.exp(model.conf_int())<br>conf[<span class="hljs-string">&#x27;OR&#x27;</span>] = params<br>conf.columns = [<span class="hljs-string">&#x27;2.5%&#x27;</span>,<span class="hljs-string">&#x27;97.5%&#x27;</span>,<span class="hljs-string">&#x27;OR&#x27;</span>]<br>conf<br></code></pre></td></tr></table></figure>
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2277,68 +2295,96 @@ memory usage: 444.2 KB
   </thead>
   <tbody>
     <tr>
+      <th>Regional Node Examined</th>
+      <td>0.667605</td>
+      <td>0.837845</td>
+      <td>0.747896</td>
+    </tr>
+    <tr>
       <th>Regional Node Positive</th>
-      <td>1.094541</td>
-      <td>1.473103</td>
-      <td>1.269792</td>
+      <td>1.262375</td>
+      <td>1.680761</td>
+      <td>1.456623</td>
+    </tr>
+    <tr>
+      <th>Age_middle aged</th>
+      <td>0.442022</td>
+      <td>0.986634</td>
+      <td>0.660389</td>
+    </tr>
+    <tr>
+      <th>Age_elderly</th>
+      <td>0.637089</td>
+      <td>1.348257</td>
+      <td>0.926801</td>
+    </tr>
+    <tr>
+      <th>Race_Black</th>
+      <td>1.211877</td>
+      <td>2.274171</td>
+      <td>1.660125</td>
     </tr>
     <tr>
       <th>Race_Other</th>
-      <td>0.382678</td>
-      <td>0.941337</td>
-      <td>0.600191</td>
+      <td>0.428512</td>
+      <td>0.944778</td>
+      <td>0.636277</td>
     </tr>
     <tr>
       <th>Marital Status_Other</th>
-      <td>1.038909</td>
-      <td>1.727506</td>
-      <td>1.339672</td>
+      <td>1.078346</td>
+      <td>1.708693</td>
+      <td>1.357410</td>
+    </tr>
+    <tr>
+      <th>Marital Status_Single</th>
+      <td>0.858255</td>
+      <td>1.451147</td>
+      <td>1.115999</td>
     </tr>
     <tr>
       <th>T Stage</th>
-      <td>1.221613</td>
-      <td>1.595665</td>
-      <td>1.396168</td>
+      <td>1.208529</td>
+      <td>1.532885</td>
+      <td>1.361079</td>
     </tr>
     <tr>
       <th>N Stage</th>
-      <td>1.219773</td>
-      <td>1.949118</td>
-      <td>1.541908</td>
+      <td>1.147983</td>
+      <td>1.742592</td>
+      <td>1.414378</td>
     </tr>
     <tr>
       <th>Grade</th>
-      <td>1.183231</td>
-      <td>1.678086</td>
-      <td>1.409100</td>
+      <td>1.309329</td>
+      <td>1.782662</td>
+      <td>1.527773</td>
     </tr>
     <tr>
       <th>Estrogen Status</th>
-      <td>0.310819</td>
-      <td>0.682437</td>
-      <td>0.460559</td>
+      <td>0.350761</td>
+      <td>0.698828</td>
+      <td>0.495098</td>
     </tr>
     <tr>
       <th>Progesterone Status</th>
-      <td>0.437239</td>
-      <td>0.779826</td>
-      <td>0.583927</td>
+      <td>0.434554</td>
+      <td>0.714957</td>
+      <td>0.557393</td>
     </tr>
     <tr>
       <th>intercept</th>
-      <td>0.125550</td>
-      <td>0.308954</td>
-      <td>0.196950</td>
+      <td>0.114312</td>
+      <td>0.331415</td>
+      <td>0.194640</td>
     </tr>
   </tbody>
 </table>
 </div>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(figsize=(<span class="hljs-number">6</span>,<span class="hljs-number">5</span>))<br>plt.barh(conf.index,conf[<span class="hljs-string">&#x27;OR&#x27;</span>].values, <span class="hljs-number">0.25</span>, color=<span class="hljs-string">&#x27;orange&#x27;</span>)<br>plt.axvline(<span class="hljs-number">1</span>, linestyle=<span class="hljs-string">&#x27;--&#x27;</span>,color=<span class="hljs-string">&#x27;red&#x27;</span>,linewidth=<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure>
-<pre><code class="hljs">&lt;matplotlib.lines.Line2D at 0x19f6c0b26b0&gt;
-</code></pre>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_77_1.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> roc_curve, auc<br><br><span class="hljs-comment">## 测试集分类预测</span><br>resu = model.predict(x_test[cols])<br>fpr, tpr, threshold = roc_curve(y_test, resu)<br><br><span class="hljs-comment">##计算ROC，并绘制曲线</span><br>rocauc = auc(fpr, tpr)<br>plt.plot(fpr, tpr, <span class="hljs-string">&#x27;r&#x27;</span>, label=<span class="hljs-string">&#x27;AUC = %0.2f&#x27;</span> % rocauc)<br>plt.plot([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], color=<span class="hljs-string">&#x27;grey&#x27;</span>,linestyle=<span class="hljs-string">&#x27;--&#x27;</span>)<br>plt.xlim([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])<br>plt.ylim([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])<br>plt.ylabel(<span class="hljs-string">&#x27;True rate&#x27;</span>)<br>plt.xlabel(<span class="hljs-string">&#x27;False rate&#x27;</span>)<br>plt.legend(loc=<span class="hljs-string">&#x27;lower right&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
-<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_78_0.png" srcset="/img/loading.gif" lazyload alt="png" /></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs python">fig, ax = plt.subplots(figsize=(<span class="hljs-number">6</span>,<span class="hljs-number">5</span>))<br><br><span class="hljs-keyword">for</span> d,c <span class="hljs-keyword">in</span> <span class="hljs-built_in">zip</span>(conf.index, conf.values):<br>    <span class="hljs-keyword">if</span> d <span class="hljs-keyword">in</span> [<span class="hljs-string">&#x27;intercept&#x27;</span>,<span class="hljs-string">&#x27;Age_elderly&#x27;</span>,<span class="hljs-string">&#x27;Marital Status_Single &#x27;</span>]:<br>        plt.plot([c[<span class="hljs-number">0</span>],c[<span class="hljs-number">1</span>]],[d,d],<span class="hljs-string">&#x27;-&#x27;</span>,<span class="hljs-number">0.25</span>, color=<span class="hljs-string">&#x27;gray&#x27;</span>,alpha=<span class="hljs-number">0.3</span>)<br>        plt.plot(c[<span class="hljs-number">2</span>],d, <span class="hljs-string">&#x27;s&#x27;</span>,<span class="hljs-number">0.25</span>, color=<span class="hljs-string">&#x27;gray&#x27;</span>,alpha=<span class="hljs-number">0.3</span>)<br>    <span class="hljs-keyword">else</span>:<br>        plt.plot([c[<span class="hljs-number">0</span>],c[<span class="hljs-number">1</span>]],[d,d],<span class="hljs-string">&#x27;-&#x27;</span>,<span class="hljs-number">0.25</span>, color=<span class="hljs-string">&#x27;black&#x27;</span>)<br>        plt.plot(c[<span class="hljs-number">2</span>],d, <span class="hljs-string">&#x27;s&#x27;</span>,<span class="hljs-number">0.25</span>, color=<span class="hljs-string">&#x27;black&#x27;</span>)<br><br>plt.axvline(<span class="hljs-number">1</span>, linestyle=<span class="hljs-string">&#x27;--&#x27;</span>,color=<span class="hljs-string">&#x27;grey&#x27;</span>,linewidth=<span class="hljs-number">1</span>)<br><br>ax.tick_params(bottom=<span class="hljs-literal">True</span>, labelbottom=<span class="hljs-literal">True</span>, top=<span class="hljs-literal">False</span>, labeltop=<span class="hljs-literal">False</span>,left=<span class="hljs-literal">False</span>) <br>ax.spines[<span class="hljs-string">&#x27;top&#x27;</span>].set_visible(<span class="hljs-literal">False</span>)<br>ax.spines[<span class="hljs-string">&#x27;right&#x27;</span>].set_visible(<span class="hljs-literal">False</span>)<br>ax.spines[<span class="hljs-string">&#x27;left&#x27;</span>].set_visible(<span class="hljs-literal">False</span>)<br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_77_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> roc_curve, auc<br><br><span class="hljs-comment"># 测试集分类预测</span><br><span class="hljs-comment"># resu = model.predict(x_test[cols])</span><br><span class="hljs-comment"># fpr, tpr, threshold = roc_curve(y_test, resu)</span><br><br>resu = model.predict(X[cols])<br>fpr, tpr, threshold = roc_curve(data.iloc[:,-<span class="hljs-number">1</span>], resu)<br><br><span class="hljs-comment">#计算ROC，并绘制曲线</span><br>rocauc = auc(fpr, tpr)<br>plt.plot(fpr, tpr, <span class="hljs-string">&#x27;r&#x27;</span>, label=<span class="hljs-string">&#x27;AUC = %0.2f&#x27;</span> % rocauc)<br>plt.plot([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], color=<span class="hljs-string">&#x27;grey&#x27;</span>,linestyle=<span class="hljs-string">&#x27;--&#x27;</span>)<br>plt.xlim([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])<br>plt.ylim([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])<br>plt.ylabel(<span class="hljs-string">&#x27;True rate&#x27;</span>)<br>plt.xlabel(<span class="hljs-string">&#x27;False rate&#x27;</span>)<br>plt.legend(loc=<span class="hljs-string">&#x27;lower right&#x27;</span>)<br>plt.show()<br></code></pre></td></tr></table></figure>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96/output_78_0.png" srcset="/img/loading.gif" lazyload alt=" " /></p>
 
                 
               </div>
@@ -2417,7 +2463,7 @@ memory usage: 444.2 KB
       </p>
       <!-- 
       <div>数据分析与可视化</div>
-      <div>https://eastwode.gitee.io/2022/11/15/数据分析与可视化/</div>
+      <div>https://eastwode.gitee.io/2022/11/24/数据分析与可视化/</div>
       -->
     </div>
     <div class="license-meta">
@@ -2463,18 +2509,12 @@ memory usage: 444.2 KB
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/17/Python%20%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89/" title="Python 快速入门（一）">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Python 快速入门（一）</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/15/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/" title="Markdown常用语法">
-                        <span class="hidden-mobile">Markdown常用语法</span>
+                      <a href="/2022/11/24/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A8%A1%E6%8B%9F/" title="蒙特卡洛模拟">
+                        <span class="hidden-mobile">蒙特卡洛模拟</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
